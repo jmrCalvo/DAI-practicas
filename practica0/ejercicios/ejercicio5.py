@@ -18,17 +18,6 @@ def generate_array():
     return array
 
 
-# def check_brackets(arr):
-#     if(len(arr) == 1):
-#         return True
-#     for i in range(math.floor((len(arr)/2)+1)):
-#         print(i, len(arr) - 1 - i)
-#         if(arr[i] == arr[len(arr) - 1 - i]):
-#             return False
-#     # print(arr, len(arr))
-#     return True
-
-
 def check(brackets_str):
     open_char = "["
     close_char = "]"
