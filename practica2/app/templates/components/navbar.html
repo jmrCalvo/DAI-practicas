@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-dark bg-primary navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand logo" href="#">
+      <img class="image-logo" src="static/coala.png" alt="Coala" width="50" height="50">
+      <h2>Coala</h2>
+    </a>
+    <form action="/guess" method="get">
+      <button type="submit" class="btn btn-primary">guess</button>
+    </form>
+    <form action="/criba/10" method="get">
+      <button type="submit" class="btn btn-primary">criba</button>
+    </form>
+    <form action="/ordena/8,5,3,10,9,20,1" method="get">
+      <button type="submit" class="btn btn-primary">sort</button>
+    </form>
+    <form action="/fibonacci/10" method="get">
+      <button type="submit" class="btn btn-primary">fibonacci</button>
+    </form>
+    <form action="/brackets/[][][[][][[]]]" method="get">
+      <button type="submit" class="btn btn-primary">brackets</button>
+    </form>
+    <form action="/identify/email@email.com" method="get">
+      <button type="submit" class="btn btn-primary">identify</button>
+    </form>
+    <form action="/svg" method="get">
+      <button type="submit" class="btn btn-primary">svg</button>
+    </form>
+    <div class="nav justify-content-end">
+      {% if page == "login" %}
+        <form action="/signup" method="get">
+          <button type="submit" class="btn btn-light">Sign up</button>
+        </form>
+      {% else %}
+        {% if page == "index" %}
+          <form action="/logout" method="get">
+            <button type="submit" class="btn btn-danger" style="margin-right: 1em;">Log out</button>
+          </form>
+        {% else %}
+          <form action="/login" method="get">
+            <button type="submit" class="btn btn-light" style="margin-right: 1em;">Login</button>
+          </form>
+        {% endif %}
+      {% endif %}
+    </div>
+    
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+
+<div style="position: absolute; z-index: 20; right: 20px; top:6em">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class=flashes>
+        {% for category, message in messages[-2:] %}
+          
+          {% if  category == "error"%}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              {{message}}
+            </div>
+          {% else %}
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+              {{message}}
+            </div>
+          {% endif %}
+        
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+</div>

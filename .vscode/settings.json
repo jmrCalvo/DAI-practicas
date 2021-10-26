@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./practica0/ejercicios"]
+}

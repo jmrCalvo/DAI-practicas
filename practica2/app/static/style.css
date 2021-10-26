@@ -1,0 +1,49 @@
+/** @format */
+
+.navbar-custom {
+  width: 100%;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+.image-logo {
+  margin-right: 1rem;
+}
+
+.container-custom {
+  position: relative;
+  top: 4.5em;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.sub-copyright {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.login-container {
+  background-color: whitesmoke;
+  height: 88.25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guess-input {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
